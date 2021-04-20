@@ -12,7 +12,27 @@ class Exercise1 extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: null,
+      body: Column(
+        children: [
+          Expanded(
+            child: Container(
+              color: Colors.green,
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.yellow,
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ],
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      ),
     );
   }
 }
